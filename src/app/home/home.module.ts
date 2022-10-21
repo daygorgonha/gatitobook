@@ -1,3 +1,4 @@
+import { SharedModule } from './../shared/shared.module';
 import { NovoUsuarioComponent } from './novo-usuario/novo-usuario.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -18,8 +19,7 @@ import { MensagemModule } from '../componentes/mensagem/mensagem.module';
     CommonModule,
     HomeRoutingModule,
     FormsModule,
-    MensagemModule,
-    ReactiveFormsModule
+    SharedModule
   ],
   exports: [HomeComponent],
 })
